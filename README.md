@@ -154,7 +154,7 @@ Grateful to NxtWave Academy and everyone involved in making this hands-on learni
 
 **GitHub:** https://github.com/sai-varshini-011
 
-## ©️ Copyright & A Little Reminder 👀
+## ©️ Copyright & A Little Reminder
 
 © 2026 M Sai Varshini. All rights reserved.
 
