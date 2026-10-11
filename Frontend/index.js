@@ -125,11 +125,11 @@ voiceButtons.forEach(btn => {
 
 // Generate Audio guide button Logic
 
-const GENERATE_AUDIO_GUIDE_API_URL = "http://127.0.0.1:5000/generate-audio-guide";
+const GENERATE_AUDIO_GUIDE_API_URL = "https://ai-powered-travel-guide-rolg.onrender.com/generate-audio-guide";
 
 generateButton.addEventListener('click', async () => {
   generateButton.disabled = true;
-  generateButton.textContent = '⏳ Generating Audio...';
+  generateButton.textContent = '⏳ Generating information...';
 
   try {
     const selectedLanguage = languageSelect.value;
@@ -155,20 +155,13 @@ generateButton.addEventListener('click', async () => {
     transcriptText.textContent = data.description;
     audioSection.classList.remove('hidden');
 
-    if (data.audioBase64) {
-      audioPlayer.src = `data:audio/mp3;base64,${data.audioBase64}`;
-      audioPlayer.load();
-      audioPlayer.classList.remove('hidden');
-      generateButton.textContent = 'Listen to Audio';
-    } else {
-      audioPlayer.classList.add('hidden');
-      generateButton.textContent = 'Audio Not Available';
-    }
+    audioPlayer.classList.add('hidden');
+    generateButton.textContent = 'Generate Information';
 
   } catch (err) {
     console.error(err);
     alert('Generation failed. Please check your connection.');
-    generateButton.textContent = 'Generate Audio Guide';
+    generateButton.textContent = 'Generate Information';
     generateButton.disabled = false;
   }
 });

@@ -107,14 +107,10 @@ def generate_audio_guide():
 
 
     text_description = generate_description(place, answer_type, language)
-    audio_path = generate_speech(text_description, voice_id, locale)
-    audio_bytes = open(audio_path.name, "rb").read()
-    encoded_audio = base64.b64encode(audio_bytes).decode("utf-8")
 
-    return {
-        "description": text_description,
-        "audioBase64": encoded_audio
-                }
+return {
+    "description": text_description
+}
 
 if __name__ == "__main__":
     app.run(debug=True)
