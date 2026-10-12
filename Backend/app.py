@@ -108,9 +108,9 @@ def generate_audio_guide():
 
     text_description = generate_description(place, answer_type, language)
 
-return {
+    return {
     "description": text_description
-}
+    }
 
 if __name__ == "__main__":
     app.run(debug=True)
