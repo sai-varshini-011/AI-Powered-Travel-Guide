@@ -6,7 +6,7 @@ An AI-powered travel guide web application built as part of the **LEVEL X Hands-
 
 The application uses **Google Gemini AI** to generate historical information and interesting insights about tourist destinations, helping users explore and learn about places through AI.
 
-This project is being developed further, with plans to integrate **Murf.AI** for AI-powered audio guides.
+The project currently focuses on text-based travel information, with plans to integrate **Murf.AI** for AI-powered audio guides in the future.
 
 ## 🌐 Live Demo
 
@@ -45,7 +45,7 @@ Explore tourist destinations and discover AI-generated historical information po
 | Google Gemini API | AI-generated travel information |
 | Murf.AI | Planned audio integration |
 | GitHub | Version control |
-| Render | Backend deployment platform |
+| Render | Web application deployment |
 
 ## 📂 Project Structure
 
@@ -54,8 +54,7 @@ AI-Powered-Travel-Guide/
 │
 ├── Backend/
 │   ├── app.py
-│   ├── requirements.txt
-│   └── .env (local only)
+│   └── requirements.txt
 │
 ├── Frontend/
 │   ├── index.html
@@ -64,6 +63,8 @@ AI-Powered-Travel-Guide/
 ├── .gitignore
 └── README.md
 ```
+
+**Note:** A local `.env` file is used for API credentials and is excluded from GitHub.
 
 ## ⚙️ Getting Started
 
@@ -105,7 +106,13 @@ The Flask server should start at:
 
 Open `Frontend/index.html` using VS Code Live Server or another local development server.
 
-Select a destination and generate historical information using AI.
+To use the locally running backend, configure the frontend's API request to use the local Flask server instead of the deployed Render URL.
+
+Select a tourist destination and generate historical information using Google Gemini AI.
+
+**Alternatively, you can access the live application directly:**
+
+🌍 **[Launch AI-Powered Travel Guide](https://ai-powered-travel-guide-rolg.onrender.com/)**
 
 ## 🔄 How It Works
 
@@ -138,12 +145,6 @@ Frontend Display
 - Sensitive credentials should never be committed to public repositories.
 - Deployment environment variables must be configured separately.
 
-## 🌱 Future Enhancements
-
-The next step is integrating **Murf.AI** to convert AI-generated travel information into audio guides.
-
-Further improvements will focus on multilingual experiences, voice customization, personalized trip planning, and making the application more interactive and accessible.
-
 ## 🙌 Acknowledgement
 
 This project was developed as part of the **LEVEL X Hands-on AI Workshop**, organized by **NxtWave Academy** at **Chalapathi Institute of Engineering and Technology, Vijayawada**.
@@ -162,9 +163,9 @@ Grateful to NxtWave Academy and everyone involved in making this hands-on learni
 
 **GitHub:** https://github.com/sai-varshini-011
 
-## ©️ Copyright & A Little Reminder
+## ©️ Copyright & A Friendly Reminder 👀
 
-© 2026 M Sai Varshini. All rights reserved.
+© 2026 M Sai Varshini. All rights reserved for original contributions.
 
 Built with curiosity, effort, countless experiments, and a little help from AI. ✨
 
@@ -178,13 +179,15 @@ A little credit costs nothing, but it says a lot about your character.
 
 *Learn from others. Build something of your own. And never forget to give credit where it's due.* 🤝
 
+Workshop starter materials and third-party components remain subject to their respective ownership and licensing terms.
+
 ## 📌 Project Status
 
 🚀 **Live & Under Development**
 
-The AI-powered historical information feature has been implemented and the application is now deployed on Render.
+The AI-powered historical information feature has been implemented, and the application is now deployed on Render.
 
-More features, including Murf.AI-powered audio guides, are planned for future updates!
+The current version generates text-based travel information. More features, including Murf.AI-powered audio guides, are planned for future updates!
 
 ---
 
