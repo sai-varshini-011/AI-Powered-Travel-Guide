@@ -8,6 +8,14 @@ The application uses **Google Gemini AI** to generate historical information and
 
 This project is being developed further, with plans to integrate **Murf.AI** for AI-powered audio guides.
 
+## 🌐 Live Demo
+
+🚀 **[Try the AI-Powered Travel Guide](https://ai-powered-travel-guide-rolg.onrender.com/)**
+
+Explore tourist destinations and discover AI-generated historical information powered by Google Gemini.
+
+**Note:** The application is hosted on Render's free tier, so it may take a few moments to load after a period of inactivity.
+
 ## ✨ Features
 
 ### ✅ Currently Implemented
@@ -172,9 +180,11 @@ A little credit costs nothing, but it says a lot about your character.
 
 ## 📌 Project Status
 
-🚧 **Work in Progress**
+🚀 **Live & Under Development**
 
-The historical information generation feature has been successfully tested locally. More features and improvements are on the way!
+The AI-powered historical information feature has been implemented and the application is now deployed on Render.
+
+More features, including Murf.AI-powered audio guides, are planned for future updates!
 
 ---
 
