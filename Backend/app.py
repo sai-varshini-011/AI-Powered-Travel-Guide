@@ -95,7 +95,18 @@ def generate_description(place, answer_type, language):
         contents=prompt
     )
     return response.text
+
+from flask import send_from_directory
+
+@app.route("/")
+def home():
+    return send_from_directory("../Frontend", "index.html")
+
+@app.route("/index.js")
+def frontend_js():
+    return send_from_directory("../Frontend", "index.js")
     
+
 @app.route("/generate-audio-guide", methods=["POST"])
 def generate_audio_guide():
     data = request.json
